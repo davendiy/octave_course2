@@ -45,7 +45,16 @@ function y_array = methodOylerModified(func, y0, a, b, step)
 end
 
   
-function y_array = methodHoyne(func, y0, a, b, step)
+function y_array = methodHoin(func, y0, a, b, step)
+  % Hoin's method for solving differential equations
+  % like y' = f(x, y)   (*)
+  
+  %:param func: string - name of function that will be used 
+  %             instead f(x, y) in (*)
+  %:param y0: value of the needed function in a
+  %:param a: left boundary of the section
+  %:param step: distance between x_i and x_i+1 in the splitting of [a, b]
+  %:return y_array: array of the values of the function on [a, b] 
   x_array = [a:step:b];
   y_array = [a:step:b];
   y_array(1) = y0;
