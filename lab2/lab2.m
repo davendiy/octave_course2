@@ -1,5 +1,9 @@
 % main script
 
+% y' = y / (3x - y^2)
+% question 7: Does this equation have any bounded solutions on the R?
+% answer: y = 0;
+
 A = 1;       % params for variant 7
 B = 2;
 Y0 = 1;
